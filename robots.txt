@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://onlylegitsource.github.io/MindEra-Review/sitemap.xml
