@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- Source for assets/og-image.png (1200x630). Re-render with:
+     chrome --headless --hide-scrollbars --window-size=1200,630 --screenshot=assets/og-image.png tools/og-image.html -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<title>Nelavista social image</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&family=Inter+Tight:wght@400;500;600&display=swap">
+<style>
+  html, body { margin: 0; width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    position: relative;
+    font-family: "Inter Tight", system-ui, sans-serif;
+    color: #F2F4F8;
+    background: #060A13;
+    -webkit-font-smoothing: antialiased;
+  }
+  .grid {
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(to right, rgba(255,255,255,.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255,255,255,.05) 1px, transparent 1px);
+    background-size: 60px 60px;
+    -webkit-mask-image: radial-gradient(ellipse 70% 90% at 85% 10%, #000 10%, transparent 75%);
+  }
+  .glow {
+    position: absolute; right: -220px; top: -260px;
+    width: 820px; height: 820px;
+    background: radial-gradient(circle, rgba(58,102,245,.42), rgba(58,102,245,.08) 42%, transparent 68%);
+  }
+  .wrap { position: absolute; inset: 64px 72px; display: flex; flex-direction: column; }
+  .brand { display: flex; align-items: center; gap: 14px; font-size: 26px; font-weight: 600; letter-spacing: -.02em; }
+  .brand svg { width: 44px; height: 44px; }
+  .name { margin-top: auto; font-size: 92px; font-weight: 600; line-height: .95; letter-spacing: -.045em; text-transform: uppercase; }
+  .role { margin-top: 22px; font-family: "Instrument Serif", serif; font-style: italic; font-size: 54px; letter-spacing: -.01em;
+    background: linear-gradient(100deg, #C6D4FF, #7FA0FF 50%, #4E78FF); -webkit-background-clip: text; color: transparent; }
+  .rule { margin-top: 40px; display: flex; align-items: center; gap: 0; border-top: 1px solid rgba(255,255,255,.14); padding-top: 22px; }
+  .rule span { flex: 1; font-size: 19px; font-weight: 500; color: #A7B0C4; letter-spacing: -.005em; }
+  .rule span b { color: #7FA0FF; font-weight: 600; margin-right: 10px; font-size: 14px; letter-spacing: .1em; }
+</style>
+</head>
+<body>
+  <div class="grid"></div>
+  <div class="glow"></div>
+  <div class="wrap">
+    <div class="brand">
+      <svg viewBox="0 0 32 32"><rect width="32" height="32" rx="8" fill="#0F1830" stroke="rgba(255,255,255,.18)"/><path d="M9.5 23V9.5L22.5 22.5V12" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="22.5" cy="8.6" r="2.6" fill="#7FA0FF"/></svg>
+      Nelavista
+    </div>
+    <div class="name">Abdul Afeez Tella</div>
+    <div class="role">Founder, Nelavista</div>
+    <div class="rule">
+      <span><b>01</b>University</span>
+      <span><b>02</b>Skills</span>
+      <span><b>03</b>Opportunities</span>
+      <span><b>04</b>Work</span>
+    </div>
+  </div>
+</body>
+</html>
