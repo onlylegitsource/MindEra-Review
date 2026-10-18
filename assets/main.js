@@ -76,14 +76,14 @@
       counter.unobserve(entry.target);
       var el = entry.target;
       var target = parseInt(el.getAttribute('data-count'), 10);
-      if (reduceMotion || !target) { el.textContent = target; return; }
+      if (reduceMotion || !target) { el.textContent = target.toLocaleString('en-US'); return; }
       var start = null;
       var duration = 1600;
       var step = function (t) {
         if (start === null) start = t;
         var p = Math.min((t - start) / duration, 1);
         var eased = 1 - Math.pow(1 - p, 4);
-        el.textContent = Math.round(target * eased);
+        el.textContent = Math.round(target * eased).toLocaleString('en-US');
         if (p < 1) requestAnimationFrame(step);
       };
       el.textContent = '0';
