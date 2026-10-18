@@ -25,7 +25,7 @@ No build step. Deploy the repository root as a static site.
 
 ## Updating content
 
-- **Traction:** the only figure on the site is `645+ students reached` (`data-count="645"` in `index.html`). Only add numbers that are verified.
+- **Traction:** the only figure on the site is `2,500+ students reached` (`data-count="2500"` in `index.html`). Only add numbers that are verified.
 - **Social image:** edit `tools/og-image.html`, then re-render:
   `chrome --headless=new --hide-scrollbars --window-size=1200,630 --screenshot=assets/og-image.png tools/og-image.html`
 - **Domain:** if the site moves to a custom domain, update the canonical URL, `og:url`, `og:image`, JSON-LD `@id`s, `robots.txt` and `sitemap.xml`, and the absolute paths in `404.html`.
